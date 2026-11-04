@@ -1,0 +1,27 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --toggle-color: #000000;
+}
+
+.dark-mode {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --toggle-color: #ffffff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#toggle-button {
+    font-size: 15px;
+    background-color: var(--toggle-color);
+    color: var(--bg-color);
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
