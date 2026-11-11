@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import RandomEmoji from './components/randomEmoji'
 import Toggle from './components/toggle'
 import "./styles/randomEmoji.css";
+import "./styles/toggle.css";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -1,15 +1,16 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import "../styles/randomEmoji.css";
 
 function randomEmoji() {
 
     const [generateEmoji, setGenerateEmoji] = useState("😀");
 
-    useEffect(() => {
+    const generateRandomEmoji = () => {
         const sampleEmojis = ["😀", "😂", "😍", "😎", "😭", "😡"];
         const randomIndex = Math.floor(Math.random() * sampleEmojis.length);
         setGenerateEmoji(sampleEmojis[randomIndex]);
-    }, []);
+    }
+
    
     return (
 
@@ -32,6 +33,8 @@ function randomEmoji() {
         </div>
         
         <div>
+            
+            <button id="generateEmoji" onClick={generateRandomEmoji}>Generate Emoji</button>
 
         </div>
 
